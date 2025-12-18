@@ -1,0 +1,1644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore comprehensive undergraduate and postgraduate programs at MMCAS - AI & Data Science, Computer Science, Business Administration, Commerce, Arts & Humanities">
+    <meta name="keywords" content="MMCAS courses, undergraduate programs, postgraduate programs, AI courses, computer science, business administration, Tamil Nadu">
+    <title>Academic Programs - MMCAS Digital Campus</title>
+    <link rel="stylesheet" href="../css/main.css">
+  
+  <script type="module" async src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fmmcasdigi4958back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.12"></script>
+  <script type="module" defer src="https://static.rocket.new/rocket-shot.js?v=0.0.1"></script>
+  </head>
+<body class="bg-background">
+    <!-- Navigation Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white shadow-custom-sm transition-all duration-300" id="mainHeader">
+        <nav class="container-custom">
+            <div class="flex items-center justify-between py-4">
+                <!-- Logo -->
+             <a href="homepage.html" class="flex items-center gap-3 group">
+                    
+                        <img class="impor" src="/image/logo.jpg" alt="">
+                    <div class="hidden md:block">
+                        <div class="font-headline font-bold text-xl text-primary">Muthayammal Memorial College of <br>Arts and Science</div>
+                        <div class="text-xs text-text-secondary">Muthayammal Educational Trust</div>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden lg:flex items-center gap-8">
+                    <a href="homepage.html" class="text-text-secondary hover:text-primary transition-colors duration-200">Home</a>
+                    <a href="about_us.html" class="text-text-secondary hover:text-primary transition-colors duration-200">About Us</a>
+                    <a href="courses.html" class="text-primary font-semibold border-b-2 border-primary pb-1 transition-colors duration-200">Courses</a>
+                    <a href="admissions.html" class="text-text-secondary hover:text-primary transition-colors duration-200">Admissions</a>
+                    <a href="facilities.html" class="text-text-secondary hover:text-primary transition-colors duration-200">Facilities</a>
+                    <a href="gallery.html" class="text-text-secondary hover:text-primary transition-colors duration-200">Gallery</a>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="hidden md:flex items-center gap-4">
+                    <a href="admissions.html" class="btn btn-primary">Apply Now</a>
+                    <button id="aiAssistantBtn" class="btn btn-ghost" aria-label="Open AI Assistant">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="lg:hidden p-2 text-primary" aria-label="Toggle mobile menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="hidden lg:hidden pb-4">
+                <div class="flex flex-col gap-4">
+                    <a href="homepage.html" class="text-text-secondary hover:text-primary py-2 pl-4 transition-colors duration-200">Home</a>
+                    <a href="about_us.html" class="text-text-secondary hover:text-primary py-2 pl-4 transition-colors duration-200">About Us</a>
+                    <a href="courses.html" class="text-primary font-semibold py-2 border-l-4 border-primary pl-4">Courses</a>
+                    <a href="admissions.html" class="text-text-secondary hover:text-primary py-2 pl-4 transition-colors duration-200">Admissions</a>
+                    <a href="facilities.html" class="text-text-secondary hover:text-primary py-2 pl-4 transition-colors duration-200">Facilities</a>
+                    <a href="gallery.html" class="text-text-secondary hover:text-primary py-2 pl-4 transition-colors duration-200">Gallery</a>
+                    <a href="admissions.html" class="btn btn-primary w-full mt-2">Apply Now</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="pt-32 pb-16 bg-gradient-to-br from-primary-900 via-primary-800 to-primary-700 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <svg class="w-full h-full" viewBox="0 0 1200 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="200" cy="100" r="150" fill="white" opacity="0.1"/>
+                <circle cx="900" cy="400" r="200" fill="white" opacity="0.1"/>
+                <circle cx="600" cy="300" r="100" fill="white" opacity="0.1"/>
+            </svg>
+        </div>
+        <div class="container-custom relative z-10">
+            <div class="max-w-4xl mx-auto text-center animate-slideUp">
+                <h1 class="text-white mb-6">Academic Programs</h1>
+                <p class="text-white/90 text-xl leading-relaxed mb-8">Discover comprehensive undergraduate and postgraduate programs designed to transform students into future-ready professionals</p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <button onclick="document.getElementById('filterSection').scrollIntoView({behavior: 'smooth'})" class="btn btn-accent">Explore Programs</button>
+                    <button onclick="document.getElementById('comparisonTool').scrollIntoView({behavior: 'smooth'})" class="btn btn-outline bg-white/10 backdrop-blur-sm text-white border-white hover:bg-white hover:text-primary">Compare Courses</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Stats -->
+    <section class="section -mt-12 relative z-20">
+        <div class="container-custom">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="card text-center animate-slideUp">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                        </svg>
+                    </div>
+                    <div class="text-3xl font-bold text-primary mb-2">45+</div>
+                    <div class="text-text-secondary text-sm font-semibold">Programs Offered</div>
+                </div>
+
+                <div class="card text-center animate-slideUp delay-100">
+                    <div class="w-16 h-16 bg-secondary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                        </svg>
+                    </div>
+                    <div class="text-3xl font-bold text-secondary mb-2">250+</div>
+                    <div class="text-text-secondary text-sm font-semibold">Expert Faculty</div>
+                </div>
+
+                <div class="card text-center animate-slideUp delay-200">
+                    <div class="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+                        </svg>
+                    </div>
+                    <div class="text-3xl font-bold text-accent mb-2">98.5%</div>
+                    <div class="text-text-secondary text-sm font-semibold">Placement Rate</div>
+                </div>
+
+                <div class="card text-center animate-slideUp delay-300">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <div class="text-3xl font-bold text-primary mb-2">500+</div>
+                    <div class="text-text-secondary text-sm font-semibold">Industry Partners</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter & Search Section -->
+    <section class="section section-alt" id="filterSection">
+        <div class="container-custom">
+            <div class="card-elevated mb-12 animate-slideUp">
+                <div class="flex flex-col lg:flex-row gap-6">
+                    <!-- Search Bar -->
+                    <div class="flex-1">
+                        <label for="courseSearch" class="form-label">Search Programs</label>
+                        <div class="relative">
+                            <input type="text" id="courseSearch" placeholder="Search by course name, department, or specialization..." class="form-input pl-12">
+                            <svg class="w-5 h-5 text-text-secondary absolute left-4 top-1/2 -translate-y-1/2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Department Filter -->
+                    <div class="lg:w-64">
+                        <label for="departmentFilter" class="form-label">Department</label>
+                        <select id="departmentFilter" class="form-input">
+                            <option value="">All Departments</option>
+                            <option value="computer-science">Computer Science</option>
+                            <option value="business">Business & Management</option>
+                            <option value="commerce">Commerce & Finance</option>
+                            <option value="arts">Arts & Humanities</option>
+                            <option value="science">Pure Sciences</option>
+                        </select>
+                    </div>
+
+                    <!-- Duration Filter -->
+                    <div class="lg:w-48">
+                        <label for="durationFilter" class="form-label">Duration</label>
+                        <select id="durationFilter" class="form-input">
+                            <option value="">All Durations</option>
+                            <option value="3">3 Years</option>
+                            <option value="2">2 Years</option>
+                            <option value="1">1 Year</option>
+                        </select>
+                    </div>
+
+                    <!-- Level Filter -->
+                    <div class="lg:w-48">
+                        <label for="levelFilter" class="form-label">Level</label>
+                        <select id="levelFilter" class="form-input">
+                            <option value="">All Levels</option>
+                            <option value="ug">Undergraduate</option>
+                            <option value="pg">Postgraduate</option>
+                        </select>
+                    </div>
+
+                    <!-- Reset Button -->
+                    <div class="flex items-end">
+                        <button id="resetFilters" class="btn btn-ghost w-full lg:w-auto" aria-label="Reset all filters">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                            </svg>
+                            Reset
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course Grid -->
+            <div id="courseGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Computer Science -->
+                <div class="course-card card group hover:shadow-custom-lg transition-all duration-300 overflow-hidden" data-department="computer-science" data-duration="3" data-level="ug">
+                    <div class="relative h-48 overflow-hidden rounded-lg mb-4">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1ea4873d2-1765233619614.png" 
+                             alt="Computer science students programming and developing software applications in collaborative environment" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                             onerror="this.src='https://img.rocket.new/generatedImages/rocket_gen_img_1998b7bf5-1764642437646.png'; this.onerror=null;">
+                        <div class="absolute top-4 left-4">
+                            <span class="badge badge-primary">Popular</span>
+                        </div>
+                        <div class="absolute top-4 right-4">
+                            <button class="compare-btn w-10 h-10 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white transition-colors duration-200" data-course="computer-science" aria-label="Add to comparison">
+                                <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <span class="badge badge-primary">Computer Science</span>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-primary mb-3">B.Sc. Computer Science</h3>
+                    <p class="text-text-secondary mb-4 line-clamp-3">Comprehensive program covering software development, algorithms, system architecture, database management, and web technologies. Strong foundation for tech careers.</p>
+                    <div class="flex items-center gap-4 mb-4 text-sm text-text-secondary">
+                        <div class="flex items-center gap-1">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span>3 Years</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/>
+                            </svg>
+                            <span>80 Seats</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between pt-4 border-t border-neutral-200">
+                        <button class="view-details-btn text-primary font-semibold hover:text-primary-700 transition-colors duration-200" data-course="computer-science">View Details →</button>
+                        <a href="admissions.html" class="btn btn-primary btn-sm">Apply Now</a>
+                    </div>
+                </div>
+                <!-- AI & Data Science -->
+                <div class="course-card card group hover:shadow-custom-lg transition-all duration-300 overflow-hidden" data-department="computer-science" data-duration="3" data-level="ug">
+                    <div class="relative h-48 overflow-hidden rounded-lg mb-4">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1e0956208-1765233620317.png" 
+                             alt="Students working with artificial intelligence and data science technology in modern computer lab" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                             onerror="this.src='https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;">
+                        <div class="absolute top-4 left-4">
+                            <span class="badge badge-accent">New Program</span>
+                        </div>
+                        <div class="absolute top-4 right-4">
+                            <button class="compare-btn w-10 h-10 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white transition-colors duration-200" data-course="ai-data-science" aria-label="Add to comparison">
+                                <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <span class="badge badge-primary">Computer Science</span>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-primary mb-3">B.Sc. AI & Data Science</h3>
+                    <p class="text-text-secondary mb-4 line-clamp-3">Master cutting-edge technologies in artificial intelligence, machine learning, big data analytics, and neural networks. Industry-aligned curriculum with hands-on projects.</p>
+                    <div class="flex items-center gap-4 mb-4 text-sm text-text-secondary">
+                        <div class="flex items-center gap-1">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span>3 Years</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/>
+                            </svg>
+                            <span>60 Seats</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between pt-4 border-t border-neutral-200">
+                        <button class="view-details-btn text-primary font-semibold hover:text-primary-700 transition-colors duration-200" data-course="ai-data-science">View Details →</button>
+                        <a href="admissions.html" class="btn btn-primary btn-sm">Apply Now</a>
+                    </div>
+                </div>
+
+
+                <!-- Business Administration -->
+                <div class="course-card card group hover:shadow-custom-lg transition-all duration-300 overflow-hidden" data-department="business" data-duration="3" data-level="ug">
+                    <div class="relative h-48 overflow-hidden rounded-lg mb-4">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1067ac00f-1764679554341.png" 
+                             alt="Business students in professional meeting discussing management strategies and corporate planning" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                             onerror="this.src='https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2940&auto=format&fit=crop'; this.onerror=null;">
+                        <div class="absolute top-4 left-4">
+                            <span class="badge badge-secondary">High Demand</span>
+                        </div>
+                        <div class="absolute top-4 right-4">
+                            <button class="compare-btn w-10 h-10 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white transition-colors duration-200" data-course="bba" aria-label="Add to comparison">
+                                <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <span class="badge" style="background-color: #d1fae5; color: #047857;">Business & Management</span>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-primary mb-3">BBA - Business Administration</h3>
+                    <p class="text-text-secondary mb-4 line-clamp-3">Develop leadership skills and business acumen for corporate and entrepreneurial success. Focus on management, marketing, finance, and strategic planning.</p>
+                    <div class="flex items-center gap-4 mb-4 text-sm text-text-secondary">
+                        <div class="flex items-center gap-1">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span>3 Years</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/>
+                            </svg>
+                            <span>100 Seats</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between pt-4 border-t border-neutral-200">
+                        <button class="view-details-btn text-primary font-semibold hover:text-primary-700 transition-colors duration-200" data-course="bba">View Details →</button>
+                        <a href="admissions.html" class="btn btn-primary btn-sm">Apply Now</a>
+                    </div>
+                </div>
+
+                <!-- Commerce -->
+                <div class="course-card card group hover:shadow-custom-lg transition-all duration-300 overflow-hidden" data-department="commerce" data-duration="3" data-level="ug">
+                    <div class="relative h-48 overflow-hidden rounded-lg mb-4">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_17462570f-1765119649228.png" 
+                             alt="Commerce students analyzing financial data and accounting principles with calculators and documents" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                             onerror="this.src='https://img.rocket.new/generatedImages/rocket_gen_img_116bc0d04-1766034465872.png'; this.onerror=null;">
+                        <div class="absolute top-4 right-4">
+                            <button class="compare-btn w-10 h-10 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white transition-colors duration-200" data-course="bcom" aria-label="Add to comparison">
+                                <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <span class="badge" style="background-color: #fef3c7; color: #b45309;">Commerce & Finance</span>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-primary mb-3">B.Com - Commerce</h3>
+                    <p class="text-text-secondary mb-4 line-clamp-3">Comprehensive commerce education covering accounting, taxation, banking, finance, and business law. Prepare for CA, CS, CMA, and banking careers.</p>
+                    <div class="flex items-center gap-4 mb-4 text-sm text-text-secondary">
+                        <div class="flex items-center gap-1">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span>3 Years</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/>
+                            </svg>
+                            <span>120 Seats</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between pt-4 border-t border-neutral-200">
+                        <button class="view-details-btn text-primary font-semibold hover:text-primary-700 transition-colors duration-200" data-course="bcom">View Details →</button>
+                        <a href="admissions.html" class="btn btn-primary btn-sm">Apply Now</a>
+                    </div>
+                </div>
+
+                <!-- English Literature -->
+                <div class="course-card card group hover:shadow-custom-lg transition-all duration-300 overflow-hidden" data-department="arts" data-duration="3" data-level="ug">
+                    <div class="relative h-48 overflow-hidden rounded-lg mb-4">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_11d0502c2-1765130771648.png" 
+                             alt="Literature students reading and discussing classic books in library setting with vintage atmosphere" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                             onerror="this.src='https://images.unsplash.com/photo-1481627834876-b7833e8f5570?q=80&w=2940&auto=format&fit=crop'; this.onerror=null;">
+                        <div class="absolute top-4 right-4">
+                            <button class="compare-btn w-10 h-10 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white transition-colors duration-200" data-course="ba-english" aria-label="Add to comparison">
+                                <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <span class="badge" style="background-color: #fee2e2; color: #b91c1c;">Arts & Humanities</span>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-primary mb-3">BA - English Literature</h3>
+                    <p class="text-text-secondary mb-4 line-clamp-3">Explore literary masterpieces, critical theory, creative writing, and communication skills. Develop analytical thinking and cultural understanding through literature.</p>
+                    <div class="flex items-center gap-4 mb-4 text-sm text-text-secondary">
+                        <div class="flex items-center gap-1">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span>3 Years</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/>
+                            </svg>
+                            <span>60 Seats</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between pt-4 border-t border-neutral-200">
+                        <button class="view-details-btn text-primary font-semibold hover:text-primary-700 transition-colors duration-200" data-course="ba-english">View Details →</button>
+                        <a href="admissions.html" class="btn btn-primary btn-sm">Apply Now</a>
+                    </div>
+                </div>
+
+                <!-- Mathematics -->
+                <div class="course-card card group hover:shadow-custom-lg transition-all duration-300 overflow-hidden" data-department="science" data-duration="3" data-level="ug">
+                    <div class="relative h-48 overflow-hidden rounded-lg mb-4">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_18a35f56c-1765344885926.png" 
+                             alt="Mathematics students solving complex equations on blackboard with geometric patterns and formulas" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                             onerror="this.src='https://images.pexels.com/photos/3729557/pexels-photo-3729557.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;">
+                        <div class="absolute top-4 right-4">
+                            <button class="compare-btn w-10 h-10 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white transition-colors duration-200" data-course="bsc-maths" aria-label="Add to comparison">
+                                <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <span class="badge badge-primary">Pure Sciences</span>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-primary mb-3">B.Sc. Mathematics</h3>
+                    <p class="text-text-secondary mb-4 line-clamp-3">Advanced mathematical concepts including calculus, algebra, statistics, and computational mathematics. Foundation for research, analytics, and teaching careers.</p>
+                    <div class="flex items-center gap-4 mb-4 text-sm text-text-secondary">
+                        <div class="flex items-center gap-1">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span>3 Years</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/>
+                            </svg>
+                            <span>50 Seats</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between pt-4 border-t border-neutral-200">
+                        <button class="view-details-btn text-primary font-semibold hover:text-primary-700 transition-colors duration-200" data-course="bsc-maths">View Details →</button>
+                        <a href="admissions.html" class="btn btn-primary btn-sm">Apply Now</a>
+                    </div>
+                </div>
+
+                <!-- MBA -->
+                <div class="course-card card group hover:shadow-custom-lg transition-all duration-300 overflow-hidden" data-department="business" data-duration="2" data-level="pg">
+                    <div class="relative h-48 overflow-hidden rounded-lg mb-4">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1067ac00f-1764679554341.png" 
+                             alt="MBA students in executive meeting discussing business strategy with presentation and charts" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                             onerror="this.src='https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2940&auto=format&fit=crop'; this.onerror=null;">
+                        <div class="absolute top-4 left-4">
+                            <span class="badge badge-accent">Postgraduate</span>
+                        </div>
+                        <div class="absolute top-4 right-4">
+                            <button class="compare-btn w-10 h-10 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white transition-colors duration-200" data-course="mba" aria-label="Add to comparison">
+                                <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <span class="badge" style="background-color: #d1fae5; color: #047857;">Business & Management</span>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-primary mb-3">MBA - Master of Business Administration</h3>
+                    <p class="text-text-secondary mb-4 line-clamp-3">Advanced management education with specializations in Marketing, Finance, HR, and Operations. Industry exposure through internships and live projects.</p>
+                    <div class="flex items-center gap-4 mb-4 text-sm text-text-secondary">
+                        <div class="flex items-center gap-1">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span>2 Years</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/>
+                            </svg>
+                            <span>60 Seats</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between pt-4 border-t border-neutral-200">
+                        <button class="view-details-btn text-primary font-semibold hover:text-primary-700 transition-colors duration-200" data-course="mba">View Details →</button>
+                        <a href="admissions.html" class="btn btn-primary btn-sm">Apply Now</a>
+                    </div>
+                </div>
+
+                <!-- MCA -->
+                <div class="course-card card group hover:shadow-custom-lg transition-all duration-300 overflow-hidden" data-department="computer-science" data-duration="2" data-level="pg">
+                    <div class="relative h-48 overflow-hidden rounded-lg mb-4">
+                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=2940&auto=format&fit=crop" 
+                             alt="MCA students working on advanced software development projects with multiple monitors and code" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                             onerror="this.src='https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;">
+                        <div class="absolute top-4 left-4">
+                            <span class="badge badge-accent">Postgraduate</span>
+                        </div>
+                        <div class="absolute top-4 right-4">
+                            <button class="compare-btn w-10 h-10 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white transition-colors duration-200" data-course="mca" aria-label="Add to comparison">
+                                <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <span class="badge badge-primary">Computer Science</span>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-primary mb-3">MCA - Master of Computer Applications</h3>
+                    <p class="text-text-secondary mb-4 line-clamp-3">Advanced computer applications program covering software engineering, cloud computing, mobile app development, and enterprise systems.</p>
+                    <div class="flex items-center gap-4 mb-4 text-sm text-text-secondary">
+                        <div class="flex items-center gap-1">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span>2 Years</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/>
+                            </svg>
+                            <span>40 Seats</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between pt-4 border-t border-neutral-200">
+                        <button class="view-details-btn text-primary font-semibold hover:text-primary-700 transition-colors duration-200" data-course="mca">View Details →</button>
+                        <a href="admissions.html" class="btn btn-primary btn-sm">Apply Now</a>
+                    </div>
+                </div>
+
+                <!-- M.Com -->
+                <div class="course-card card group hover:shadow-custom-lg transition-all duration-300 overflow-hidden" data-department="commerce" data-duration="2" data-level="pg">
+                    <div class="relative h-48 overflow-hidden rounded-lg mb-4">
+                        <img src="https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                             alt="M.Com students analyzing advanced financial statements and taxation documents in professional setting" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                             onerror="this.src='https://images.unsplash.com/photo-1554224154-26032ffc0d07?q=80&w=2940&auto=format&fit=crop'; this.onerror=null;">
+                        <div class="absolute top-4 left-4">
+                            <span class="badge badge-accent">Postgraduate</span>
+                        </div>
+                        <div class="absolute top-4 right-4">
+                            <button class="compare-btn w-10 h-10 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white transition-colors duration-200" data-course="mcom" aria-label="Add to comparison">
+                                <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <span class="badge" style="background-color: #fef3c7; color: #b45309;">Commerce & Finance</span>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-primary mb-3">M.Com - Master of Commerce</h3>
+                    <p class="text-text-secondary mb-4 line-clamp-3">Advanced commerce studies with specializations in Accounting, Finance, and Taxation. Ideal for CA/CS aspirants and academic careers.</p>
+                    <div class="flex items-center gap-4 mb-4 text-sm text-text-secondary">
+                        <div class="flex items-center gap-1">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span>2 Years</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/>
+                            </svg>
+                            <span>50 Seats</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between pt-4 border-t border-neutral-200">
+                        <button class="view-details-btn text-primary font-semibold hover:text-primary-700 transition-colors duration-200" data-course="mcom">View Details →</button>
+                        <a href="admissions.html" class="btn btn-primary btn-sm">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- No Results Message -->
+            <div id="noResults" class="hidden text-center py-16">
+                <svg class="w-24 h-24 text-neutral-300 mx-auto mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+                <h3 class="text-2xl font-semibold text-text-primary mb-3">No Programs Found</h3>
+                <p class="text-text-secondary mb-6">Try adjusting your filters or search terms</p>
+                <button id="clearFilters" class="btn btn-primary">Clear All Filters</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Comparison Tool -->
+    <section class="section" id="comparisonTool">
+        <div class="container-custom">
+            <div class="text-center mb-12 animate-slideUp">
+                <h2 class="text-primary mb-4">Compare Programs</h2>
+                <p class="text-text-secondary text-xl max-w-3xl mx-auto">Select up to 3 programs to compare side-by-side</p>
+            </div>
+
+            <div id="comparisonContainer" class="card-elevated">
+                <div id="emptyComparison" class="text-center py-16">
+                    <svg class="w-24 h-24 text-neutral-300 mx-auto mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/>
+                    </svg>
+                    <h3 class="text-2xl font-semibold text-text-primary mb-3">No Programs Selected</h3>
+                    <p class="text-text-secondary mb-6">Click the + button on any course card to add it to comparison</p>
+                </div>
+
+                <div id="comparisonGrid" class="hidden overflow-x-auto">
+                    <table class="w-full min-w-[800px]">
+                        <thead>
+                            <tr class="border-b-2 border-neutral-200">
+                                <th class="text-left py-4 px-4 font-semibold text-text-primary">Feature</th>
+                                <th id="compare-col-1" class="py-4 px-4"></th>
+                                <th id="compare-col-2" class="py-4 px-4"></th>
+                                <th id="compare-col-3" class="py-4 px-4"></th>
+                            </tr>
+                        </thead>
+                        <tbody id="comparisonTableBody">
+                        </tbody>
+                    </table>
+                    <div class="flex justify-center gap-4 mt-8">
+                        <button id="clearComparison" class="btn btn-ghost">Clear Comparison</button>
+                        <a href="admissions.html" class="btn btn-primary">Apply to Selected Programs</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Faculty Highlights -->
+    <section class="section section-alt">
+        <div class="container-custom">
+            <div class="text-center mb-12 animate-slideUp">
+                <h2 class="text-primary mb-4">Meet Our Expert Faculty</h2>
+                <p class="text-text-secondary text-xl max-w-3xl mx-auto">Learn from industry professionals and academic scholars with decades of experience</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Faculty Member 1 -->
+                <div class="card text-center group hover:shadow-custom-lg transition-all duration-300 animate-slideUp">
+                    <div class="relative w-32 h-32 mx-auto mb-4 overflow-hidden rounded-full">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1742708e2-1763299486523.png" 
+                             alt="Portrait of Dr. Priya Sharma, Professor of Computer Science with PhD in AI" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                             onerror="this.src='https://img.rocket.new/generatedImages/rocket_gen_img_1083356a3-1763299481353.png'; this.onerror=null;">
+                    </div>
+                    <h4 class="text-xl font-semibold text-primary mb-2">Dr. Priya Sharma</h4>
+                    <p class="text-text-secondary text-sm mb-3">Professor, Computer Science</p>
+                    <p class="text-text-secondary text-sm mb-4">PhD in AI, 15+ years experience</p>
+                    <div class="flex justify-center gap-2">
+                        <span class="badge badge-primary text-xs">Machine Learning</span>
+                        <span class="badge badge-primary text-xs">AI Research</span>
+                    </div>
+                </div>
+
+                <!-- Faculty Member 2 -->
+                <div class="card text-center group hover:shadow-custom-lg transition-all duration-300 animate-slideUp delay-100">
+                    <div class="relative w-32 h-32 mx-auto mb-4 overflow-hidden rounded-full">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1c0b1b3ef-1763296195046.png" 
+                             alt="Portrait of Prof. Rajesh Kumar, Associate Professor of Business Administration with MBA" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                             onerror="this.src='https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=400'; this.onerror=null;">
+                    </div>
+                    <h4 class="text-xl font-semibold text-primary mb-2">Prof. Rajesh Kumar</h4>
+                    <p class="text-text-secondary text-sm mb-3">Associate Professor, Business</p>
+                    <p class="text-text-secondary text-sm mb-4">MBA, 12+ years experience</p>
+                    <div class="flex justify-center gap-2">
+                        <span class="badge badge-secondary text-xs">Marketing</span>
+                        <span class="badge badge-secondary text-xs">Strategy</span>
+                    </div>
+                </div>
+
+                <!-- Faculty Member 3 -->
+                <div class="card text-center group hover:shadow-custom-lg transition-all duration-300 animate-slideUp delay-200">
+                    <div class="relative w-32 h-32 mx-auto mb-4 overflow-hidden rounded-full">
+                        <img src="https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                             alt="Portrait of Dr. Meera Patel, Professor of Commerce with PhD in Finance" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                             onerror="this.src='https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=400&auto=format&fit=crop'; this.onerror=null;">
+                    </div>
+                    <h4 class="text-xl font-semibold text-primary mb-2">Dr. Meera Patel</h4>
+                    <p class="text-text-secondary text-sm mb-3">Professor, Commerce</p>
+                    <p class="text-text-secondary text-sm mb-4">PhD in Finance, 18+ years</p>
+                    <div class="flex justify-center gap-2">
+                        <span class="badge" style="background-color: #fef3c7; color: #b45309; font-size: 0.75rem;">Accounting</span>
+                        <span class="badge" style="background-color: #fef3c7; color: #b45309; font-size: 0.75rem;">Taxation</span>
+                    </div>
+                </div>
+
+                <!-- Faculty Member 4 -->
+                <div class="card text-center group hover:shadow-custom-lg transition-all duration-300 animate-slideUp delay-300">
+                    <div class="relative w-32 h-32 mx-auto mb-4 overflow-hidden rounded-full">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_12dac66d7-1763294317993.png" 
+                             alt="Portrait of Prof. Arun Krishnan, Assistant Professor of English Literature with MA" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                             onerror="this.src='https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=400'; this.onerror=null;">
+                    </div>
+                    <h4 class="text-xl font-semibold text-primary mb-2">Prof. Arun Krishnan</h4>
+                    <p class="text-text-secondary text-sm mb-3">Assistant Professor, English</p>
+                    <p class="text-text-secondary text-sm mb-4">MA in Literature, 8+ years</p>
+                    <div class="flex justify-center gap-2">
+                        <span class="badge" style="background-color: #fee2e2; color: #b91c1c; font-size: 0.75rem;">Literature</span>
+                        <span class="badge" style="background-color: #fee2e2; color: #b91c1c; font-size: 0.75rem;">Writing</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="about_us.html" class="btn btn-primary">View All Faculty</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Highlights -->
+    <section class="section">
+        <div class="container-custom">
+            <div class="text-center mb-12 animate-slideUp">
+                <h2 class="text-primary mb-4">Research & Innovation</h2>
+                <p class="text-text-secondary text-xl max-w-3xl mx-auto">Cutting-edge research projects and publications by our faculty and students</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Research Project 1 -->
+                <div class="card group hover:shadow-custom-lg transition-all duration-300 animate-slideUp">
+                    <div class="w-16 h-16 bg-primary-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
+                        <svg class="w-8 h-8 text-primary group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-3">AI in Healthcare</h3>
+                    <p class="text-text-secondary mb-4">Developing machine learning models for early disease detection and diagnosis using medical imaging data.</p>
+                    <div class="flex items-center gap-2 text-sm text-text-secondary">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        <span>Published: December 2024</span>
+                    </div>
+                </div>
+
+                <!-- Research Project 2 -->
+                <div class="card group hover:shadow-custom-lg transition-all duration-300 animate-slideUp delay-100">
+                    <div class="w-16 h-16 bg-secondary-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-secondary group-hover:scale-110 transition-all duration-300">
+                        <svg class="w-8 h-8 text-secondary group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-3">Sustainable Business Models</h3>
+                    <p class="text-text-secondary mb-4">Research on implementing circular economy principles in small and medium enterprises for sustainable growth.</p>
+                    <div class="flex items-center gap-2 text-sm text-text-secondary">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        <span>Published: November 2024</span>
+                    </div>
+                </div>
+
+                <!-- Research Project 3 -->
+                <div class="card group hover:shadow-custom-lg transition-all duration-300 animate-slideUp delay-200">
+                    <div class="w-16 h-16 bg-accent-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-accent group-hover:scale-110 transition-all duration-300">
+                        <svg class="w-8 h-8 text-accent group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-3">Digital Literature Studies</h3>
+                    <p class="text-text-secondary mb-4">Exploring the impact of digital media on contemporary literature and narrative structures in the 21st century.</p>
+                    <div class="flex items-center gap-2 text-sm text-text-secondary">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        <span>Published: October 2024</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Resources -->
+    <section class="section section-alt">
+        <div class="container-custom">
+            <div class="card-elevated">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div class="animate-slideUp">
+                        <h2 class="text-primary mb-6">Download Course Materials</h2>
+                        <p class="text-text-secondary text-lg mb-8">Get detailed information about our programs, curriculum, and admission requirements</p>
+                        <div class="space-y-4">
+                            <a href="javascript:void(0)" class="flex items-center gap-4 p-4 bg-white rounded-lg hover:shadow-md transition-all duration-200 group">
+                                <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center group-hover:bg-primary transition-colors duration-200">
+                                    <svg class="w-6 h-6 text-primary group-hover:text-white transition-colors duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                                    </svg>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="font-semibold text-primary mb-1">Complete Course Catalog 2025-26</div>
+                                    <div class="text-sm text-text-secondary">PDF • 2.5 MB</div>
+                                </div>
+                                <svg class="w-5 h-5 text-text-secondary group-hover:text-primary transition-colors duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+
+                            <a href="javascript:void(0)" class="flex items-center gap-4 p-4 bg-white rounded-lg hover:shadow-md transition-all duration-200 group">
+                                <div class="w-12 h-12 bg-secondary-100 rounded-lg flex items-center justify-center group-hover:bg-secondary transition-colors duration-200">
+                                    <svg class="w-6 h-6 text-secondary group-hover:text-white transition-colors duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                                    </svg>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="font-semibold text-primary mb-1">Admission Guidelines & Fee Structure</div>
+                                    <div class="text-sm text-text-secondary">PDF • 1.8 MB</div>
+                                </div>
+                                <svg class="w-5 h-5 text-text-secondary group-hover:text-secondary transition-colors duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+
+                            <a href="javascript:void(0)" class="flex items-center gap-4 p-4 bg-white rounded-lg hover:shadow-md transition-all duration-200 group">
+                                <div class="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center group-hover:bg-accent transition-colors duration-200">
+                                    <svg class="w-6 h-6 text-accent group-hover:text-white transition-colors duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                                    </svg>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="font-semibold text-primary mb-1">Placement Statistics & Career Outcomes</div>
+                                    <div class="text-sm text-text-secondary">PDF • 3.2 MB</div>
+                                </div>
+                                <svg class="w-5 h-5 text-text-secondary group-hover:text-accent transition-colors duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="relative animate-slideUp delay-100">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1f0900454-1764658052907.png" 
+                             alt="Student studying course materials and brochures with laptop and documents on desk" 
+                             class="w-full h-auto rounded-lg shadow-custom-lg"
+                             onerror="this.src='https://images.pexels.com/photos/4144923/pexels-photo-4144923.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section bg-gradient-to-br from-primary-900 via-primary-800 to-primary-700 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <svg class="w-full h-full" viewBox="0 0 1200 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="200" cy="100" r="150" fill="white" opacity="0.1"/>
+                <circle cx="900" cy="400" r="200" fill="white" opacity="0.1"/>
+                <circle cx="600" cy="300" r="100" fill="white" opacity="0.1"/>
+            </svg>
+        </div>
+        <div class="container-custom relative z-10">
+            <div class="max-w-4xl mx-auto text-center animate-slideUp">
+                <h2 class="text-white mb-6">Ready to Start Your Academic Journey?</h2>
+                <p class="text-white/90 text-xl leading-relaxed mb-8">Join thousands of successful students who have transformed their careers at MMCAS</p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="admissions.html" class="btn btn-accent">Apply Now</a>
+                    <button onclick="document.getElementById('floatingAiBtn').click()" class="btn btn-outline bg-white/10 backdrop-blur-sm text-white border-white hover:bg-white hover:text-primary">Talk to AI Assistant</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary-950 text-white py-12">
+        <div class="container-custom">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <!-- About -->
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">About MMCAS</h4>
+                    <p class="text-white/80 text-sm leading-relaxed">Muthayammal Memorial College of Arts and Science - Empowering students with excellence in education for over 30 years.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="about_us.html" class="text-white/80 hover:text-white transition-colors duration-200">About Us</a></li>
+                        <li><a href="courses.html" class="text-white/80 hover:text-white transition-colors duration-200">Courses</a></li>
+                        <li><a href="admissions.html" class="text-white/80 hover:text-white transition-colors duration-200">Admissions</a></li>
+                        <li><a href="facilities.html" class="text-white/80 hover:text-white transition-colors duration-200">Facilities</a></li>
+                        <li><a href="gallery.html" class="text-white/80 hover:text-white transition-colors duration-200">Gallery</a></li>
+                    </ul>
+                </div>
+
+                <!-- Programs -->
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Popular Programs</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="courses.html" class="text-white/80 hover:text-white transition-colors duration-200">AI & Data Science</a></li>
+                        <li><a href="courses.html" class="text-white/80 hover:text-white transition-colors duration-200">Computer Science</a></li>
+                        <li><a href="courses.html" class="text-white/80 hover:text-white transition-colors duration-200">Business Administration</a></li>
+                        <li><a href="courses.html" class="text-white/80 hover:text-white transition-colors duration-200">Commerce</a></li>
+                        <li><a href="courses.html" class="text-white/80 hover:text-white transition-colors duration-200">Arts & Humanities</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Contact Info</h4>
+                    <ul class="space-y-2 text-sm text-white/80">
+                        <li>Rasipuram - Attur Road</li>
+                        <li>Namakkal District</li>
+                        <li>Tamil Nadu 637408</li>
+                        <li class="pt-2"><a href="tel:+914298272727" class="hover:text-white transition-colors duration-200">+91 4298 272727</a></li>
+                        <li><a href="mailto:admissions@mmcas.edu.in" class="hover:text-white transition-colors duration-200">admissions@mmcas.edu.in</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-white/20 pt-8 text-center text-sm text-white/60">
+                <p>© 2025 Muthayammal Memorial College of Arts and Science. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AI Assistant Chatbot -->
+    <div id="aiChatbot" class="fixed bottom-6 right-6 z-50 hidden">
+        <div class="bg-white rounded-2xl shadow-custom-lg w-96 max-w-[calc(100vw-3rem)] overflow-hidden">
+            <!-- Chatbot Header -->
+            <div class="bg-gradient-to-r from-primary to-primary-700 text-white p-4 flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="font-semibold">AI Learning Assistant</div>
+                        <div class="text-xs text-white/80">Ask me about AI topics</div>
+                    </div>
+                </div>
+                <button id="closeChatbot" class="hover:bg-white/20 p-2 rounded-lg transition-colors duration-200" aria-label="Close chatbot">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Chat Messages -->
+            <div id="chatMessages" class="h-96 overflow-y-auto p-4 space-y-4 bg-surface">
+                <div class="flex gap-3">
+                    <div class="w-8 h-8 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0">
+                        <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                        </svg>
+                    </div>
+                    <div class="bg-white rounded-lg p-3 shadow-sm max-w-[80%]">
+                        <p class="text-sm text-text-primary">Hello! I'm your AI Learning Assistant. I can help you with questions about Artificial Intelligence topics. What would you like to know?</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chat Input -->
+            <div class="p-4 border-t border-neutral-200">
+                <form id="chatForm" class="flex gap-2">
+                    <input type="text" id="chatInput" placeholder="Ask about AI topics..." class="flex-1 px-4 py-2 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-sm" required>
+                    <button type="submit" class="btn btn-primary px-4 py-2" aria-label="Send message">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating AI Button -->
+    <button id="floatingAiBtn" class="fixed bottom-6 right-6 z-40 w-14 h-14 bg-primary text-white rounded-full shadow-custom-lg hover:bg-primary-700 hover:scale-110 transition-all duration-200 flex items-center justify-center" aria-label="Open AI Assistant">
+        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/>
+        </svg>
+    </button>
+
+    <!-- Course Detail Modal -->
+    <div id="courseModal" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+            <div class="sticky top-0 bg-white border-b border-neutral-200 p-6 flex items-center justify-between">
+                <h3 id="modalTitle" class="text-2xl font-semibold text-primary"></h3>
+                <button id="closeModal" class="p-2 hover:bg-neutral-100 rounded-lg transition-colors duration-200" aria-label="Close modal">
+                    <svg class="w-6 h-6 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+            <div id="modalContent" class="p-6">
+                <!-- Content will be dynamically inserted -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Course Data
+        const courseData = {
+            'ai-data-science': {
+                title: 'B.Sc. AI & Data Science',
+                department: 'Computer Science',
+                duration: '3 Years',
+                seats: '60',
+                eligibility: '10+2 with Mathematics',
+                fees: '₹45,000 per year',
+                description: 'Comprehensive program covering artificial intelligence, machine learning, deep learning, big data analytics, and neural networks with industry-aligned curriculum.',
+                curriculum: [
+                    'Python Programming & Data Structures',
+                    'Machine Learning Algorithms',
+                    'Deep Learning & Neural Networks',
+                    'Natural Language Processing',
+                    'Computer Vision',
+                    'Big Data Analytics with Hadoop & Spark',
+                    'AI Ethics & Responsible AI',
+                    'Capstone Project'
+                ],
+                careers: [
+                    'AI Engineer',
+                    'Data Scientist',
+                    'Machine Learning Engineer',
+                    'NLP Specialist',
+                    'Computer Vision Engineer',
+                    'AI Research Scientist'
+                ],
+                testimonial: {
+                    name: 'Priya Sharma',
+                    role: 'Final Year Student',
+                    text: 'The AI & Data Science program has exceeded my expectations. The hands-on projects and industry exposure have prepared me well for my career.'
+                }
+            },
+            'computer-science': {
+                title: 'B.Sc. Computer Science',
+                department: 'Computer Science',
+                duration: '3 Years',
+                seats: '80',
+                eligibility: '10+2 with Mathematics',
+                fees: '₹42,000 per year',
+                description: 'Comprehensive program covering software development, algorithms, system architecture, database management, and web technologies with strong foundation for tech careers.',
+                curriculum: [
+                    'Programming in C, C++, Java',
+                    'Data Structures & Algorithms',
+                    'Database Management Systems',
+                    'Operating Systems',
+                    'Computer Networks',
+                    'Web Technologies',
+                    'Software Engineering',
+                    'Final Year Project'
+                ],
+                careers: [
+                    'Software Developer',
+                    'Full Stack Developer',
+                    'Database Administrator',
+                    'System Analyst',
+                    'Web Developer',
+                    'Software Engineer'
+                ],
+                testimonial: {
+                    name: 'Arun Kumar',
+                    role: 'Alumni, Software Engineer at TCS',
+                    text: 'The Computer Science program provided me with a solid foundation in programming and problem-solving that has been invaluable in my career.'
+                }
+            },
+            'bba': {
+                title: 'BBA - Business Administration',
+                department: 'Business & Management',
+                duration: '3 Years',
+                seats: '100',
+                eligibility: '10+2 in any stream',
+                fees: '₹35,000 per year',
+                description: 'Develop leadership skills and business acumen for corporate and entrepreneurial success with focus on management, marketing, finance, and strategic planning.',
+                curriculum: [
+                    'Principles of Management',
+                    'Marketing Management',
+                    'Financial Accounting',
+                    'Human Resource Management',
+                    'Business Law',
+                    'Entrepreneurship Development',
+                    'Strategic Management',
+                    'Summer Internship & Project'
+                ],
+                careers: [
+                    'Business Manager',
+                    'Marketing Executive',
+                    'HR Manager',
+                    'Business Analyst',
+                    'Entrepreneur',
+                    'Management Consultant'
+                ],
+                testimonial: {
+                    name: 'Meera Patel',
+                    role: 'Alumni, Marketing Manager',
+                    text: 'The BBA program helped me develop essential business skills and leadership qualities that have been crucial in my management career.'
+                }
+            },
+            'bcom': {
+                title: 'B.Com - Commerce',
+                department: 'Commerce & Finance',
+                duration: '3 Years',
+                seats: '120',
+                eligibility: '10+2 with Commerce/Maths',
+                fees: '₹40,000 per year',
+                description: 'Comprehensive commerce education covering accounting, taxation, banking, finance, and business law to prepare for CA, CS, CMA, and banking careers.',
+                curriculum: [
+                    'Financial Accounting',
+                    'Corporate Accounting',
+                    'Cost Accounting',
+                    'Income Tax & GST',
+                    'Banking & Insurance',
+                    'Business Economics',
+                    'Auditing',
+                    'Project Work'
+                ],
+                careers: [
+                    'Chartered Accountant',
+                    'Company Secretary',
+                    'Tax Consultant',
+                    'Banking Professional',
+                    'Financial Analyst',
+                    'Auditor'
+                ],
+                testimonial: {
+                    name: 'Rajesh Kumar',
+                    role: 'Alumni, CA Finalist',
+                    text: 'The B.Com program provided excellent preparation for my CA journey with strong fundamentals in accounting and taxation.'
+                }
+            },
+            'ba-english': {
+                title: 'BA - English Literature',
+                department: 'Arts & Humanities',
+                duration: '3 Years',
+                seats: '60',
+                eligibility: '10+2 in any stream',
+                fees: '₹30,000 per year',
+                description: 'Explore literary masterpieces, critical theory, creative writing, and communication skills to develop analytical thinking and cultural understanding through literature.',
+                curriculum: [
+                    'British Literature',
+                    'American Literature',
+                    'Indian Writing in English',
+                    'Literary Criticism & Theory',
+                    'Creative Writing',
+                    'Communication Skills',
+                    'Linguistics',
+                    'Research Project'
+                ],
+                careers: [
+                    'Content Writer',
+                    'Journalist',
+                    'Editor',
+                    'Teacher/Professor',
+                    'Public Relations Officer',
+                    'Creative Writer'
+                ],
+                testimonial: {
+                    name: 'Divya Krishnan',
+                    role: 'Alumni, Content Strategist',
+                    text: 'The English Literature program enhanced my writing and analytical skills, opening doors to exciting career opportunities in content and media.'
+                }
+            },
+          
+            'mca': {
+                title: 'MCA - Master of Computer Applications',
+                department: 'Computer Science',
+                duration: '2 Years',
+                seats: '40',
+                eligibility: 'Bachelor\'s degree with Mathematics',
+                fees: '₹55,000 per year',
+                description: 'Advanced computer applications program covering software engineering, cloud computing, mobile app development, and enterprise systems.',
+                curriculum: [
+                    'Advanced Java Programming',
+                    'Software Engineering',
+                    'Cloud Computing',
+                    'Mobile Application Development',
+                    'Enterprise Systems',
+                    'Cyber Security',
+                    'Summer Internship',
+                    'Major Project'
+                ],
+                careers: [
+                    'Software Developer',
+                    'Cloud Architect',
+                    'Mobile App Developer',
+                    'System Analyst',
+                    'IT Consultant',
+                    'Technical Lead'
+                ],
+                testimonial: {
+                    name: 'Sneha Reddy',
+                    role: 'Alumni, Cloud Architect',
+                    text: 'The MCA program equipped me with advanced technical skills and industry-relevant knowledge for a successful IT career.'
+                }
+            },
+            'mcom': {
+                title: 'M.Com - Master of Commerce',
+                department: 'Commerce & Finance',
+                duration: '2 Years',
+                seats: '50',
+                eligibility: 'B.Com or equivalent',
+                fees: '₹65,000 per year',
+                description: 'Advanced commerce studies with specializations in Accounting, Finance, and Taxation ideal for CA/CS aspirants and academic careers.',
+                curriculum: [
+                    'Advanced Accounting',
+                    'Corporate Finance',
+                    'Advanced Taxation',
+                    'Financial Management',
+                    'Research Methodology',
+                    'International Business',
+                    'Seminar Presentation',
+                    'Dissertation'
+                ],
+                careers: [
+                    'Financial Analyst',
+                    'Tax Consultant',
+                    'Research Scholar',
+                    'College Lecturer',
+                    'Investment Advisor',
+                    'Corporate Accountant'
+                ],
+                testimonial: {
+                    name: 'Anita Desai',
+                    role: 'Alumni, Financial Analyst',
+                    text: 'The M.Com program provided in-depth knowledge of finance and accounting, preparing me for advanced career opportunities.'
+                }
+            }
+        };
+
+        // Filter Functionality
+        const courseSearch = document.getElementById('courseSearch');
+        const departmentFilter = document.getElementById('departmentFilter');
+        const durationFilter = document.getElementById('durationFilter');
+        const levelFilter = document.getElementById('levelFilter');
+        const resetFilters = document.getElementById('resetFilters');
+        const courseCards = document.querySelectorAll('.course-card');
+        const noResults = document.getElementById('noResults');
+        const clearFilters = document.getElementById('clearFilters');
+
+        function filterCourses() {
+            const searchTerm = courseSearch.value.toLowerCase();
+            const department = departmentFilter.value;
+            const duration = durationFilter.value;
+            const level = levelFilter.value;
+
+            let visibleCount = 0;
+
+            courseCards.forEach(card => {
+                const cardText = card.textContent.toLowerCase();
+                const cardDepartment = card.dataset.department;
+                const cardDuration = card.dataset.duration;
+                const cardLevel = card.dataset.level;
+
+                const matchesSearch = cardText.includes(searchTerm);
+                const matchesDepartment = !department || cardDepartment === department;
+                const matchesDuration = !duration || cardDuration === duration;
+                const matchesLevel = !level || cardLevel === level;
+
+                if (matchesSearch && matchesDepartment && matchesDuration && matchesLevel) {
+                    card.style.display = 'block';
+                    visibleCount++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            if (visibleCount === 0) {
+                noResults.classList.remove('hidden');
+            } else {
+                noResults.classList.add('hidden');
+            }
+        }
+
+        courseSearch.addEventListener('input', filterCourses);
+        departmentFilter.addEventListener('change', filterCourses);
+        durationFilter.addEventListener('change', filterCourses);
+        levelFilter.addEventListener('change', filterCourses);
+
+        resetFilters.addEventListener('click', () => {
+            courseSearch.value = '';
+            departmentFilter.value = '';
+            durationFilter.value = '';
+            levelFilter.value = '';
+            filterCourses();
+        });
+
+        clearFilters.addEventListener('click', () => {
+            courseSearch.value = '';
+            departmentFilter.value = '';
+            durationFilter.value = '';
+            levelFilter.value = '';
+            filterCourses();
+        });
+
+        // Course Comparison
+        let comparisonList = [];
+        const maxComparison = 3;
+
+        const compareButtons = document.querySelectorAll('.compare-btn');
+        const emptyComparison = document.getElementById('emptyComparison');
+        const comparisonGrid = document.getElementById('comparisonGrid');
+        const comparisonTableBody = document.getElementById('comparisonTableBody');
+        const clearComparison = document.getElementById('clearComparison');
+
+        compareButtons.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                const courseId = btn.dataset.course;
+
+                if (comparisonList.includes(courseId)) {
+                    comparisonList = comparisonList.filter(id => id !== courseId);
+                    btn.innerHTML = '<svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/></svg>';
+                } else if (comparisonList.length < maxComparison) {
+                    comparisonList.push(courseId);
+                    btn.innerHTML = '<svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>';
+                } else {
+                    alert('You can compare up to 3 programs only');
+                    return;
+                }
+
+                updateComparison();
+            });
+        });
+
+        function updateComparison() {
+            if (comparisonList.length === 0) {
+                emptyComparison.classList.remove('hidden');
+                comparisonGrid.classList.add('hidden');
+                return;
+            }
+
+            emptyComparison.classList.add('hidden');
+            comparisonGrid.classList.remove('hidden');
+
+            // Update headers
+            for (let i = 1; i <= 3; i++) {
+                const col = document.getElementById(`compare-col-${i}`);
+                if (i <= comparisonList.length) {
+                    const course = courseData[comparisonList[i-1]];
+                    col.innerHTML = `
+                        <div class="text-center">
+                            <div class="font-semibold text-primary mb-2">${course.title}</div>
+                            <button class="text-accent text-sm hover:text-accent-700" onclick="removeFromComparison('${comparisonList[i-1]}')">Remove</button>
+                        </div>
+                    `;
+                } else {
+                    col.innerHTML = '<div class="text-center text-text-secondary text-sm">Empty Slot</div>';
+                }
+            }
+
+            // Update table body
+            const features = ['Department', 'Duration', 'Seats', 'Eligibility', 'Fees'];
+            const featureKeys = ['department', 'duration', 'seats', 'eligibility', 'fees'];
+
+            comparisonTableBody.innerHTML = features.map((feature, index) => {
+                return `
+                    <tr class="border-b border-neutral-200">
+                        <td class="py-4 px-4 font-semibold text-text-primary">${feature}</td>
+                        ${[0, 1, 2].map(i => {
+                            if (i < comparisonList.length) {
+                                const course = courseData[comparisonList[i]];
+                                return `<td class="py-4 px-4 text-center text-text-secondary">${course[featureKeys[index]]}</td>`;
+                            }
+                            return '<td class="py-4 px-4 text-center text-text-secondary">-</td>';
+                        }).join('')}
+                    </tr>
+                `;
+            }).join('');
+        }
+
+        window.removeFromComparison = function(courseId) {
+            comparisonList = comparisonList.filter(id => id !== courseId);
+            const btn = document.querySelector(`[data-course="${courseId}"]`);
+            if (btn) {
+                btn.innerHTML = '<svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/></svg>';
+            }
+            updateComparison();
+        };
+
+        clearComparison.addEventListener('click', () => {
+            comparisonList = [];
+            compareButtons.forEach(btn => {
+                btn.innerHTML = '<svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/></svg>';
+            });
+            updateComparison();
+        });
+
+        // Course Detail Modal
+        const courseModal = document.getElementById('courseModal');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalContent = document.getElementById('modalContent');
+        const closeModal = document.getElementById('closeModal');
+        const viewDetailsButtons = document.querySelectorAll('.view-details-btn');
+
+        viewDetailsButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const courseId = btn.dataset.course;
+                const course = courseData[courseId];
+
+                modalTitle.textContent = course.title;
+                modalContent.innerHTML = `
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="text-xl font-semibold text-primary mb-3">Program Overview</h4>
+                            <p class="text-text-secondary leading-relaxed">${course.description}</p>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="card">
+                                <div class="text-sm text-text-secondary mb-1">Department</div>
+                                <div class="font-semibold text-primary">${course.department}</div>
+                            </div>
+                            <div class="card">
+                                <div class="text-sm text-text-secondary mb-1">Duration</div>
+                                <div class="font-semibold text-primary">${course.duration}</div>
+                            </div>
+                            <div class="card">
+                                <div class="text-sm text-text-secondary mb-1">Available Seats</div>
+                                <div class="font-semibold text-primary">${course.seats}</div>
+                            </div>
+                            <div class="card">
+                                <div class="text-sm text-text-secondary mb-1">Annual Fees</div>
+                                <div class="font-semibold text-primary">${course.fees}</div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h4 class="text-xl font-semibold text-primary mb-3">Eligibility Criteria</h4>
+                            <p class="text-text-secondary">${course.eligibility}</p>
+                        </div>
+
+                        <div>
+                            <h4 class="text-xl font-semibold text-primary mb-3">Curriculum Highlights</h4>
+                            <ul class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                                ${course.curriculum.map(item => `
+                                    <li class="flex items-start gap-2">
+                                        <svg class="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                        </svg>
+                                        <span class="text-text-secondary">${item}</span>
+                                    </li>
+                                `).join('')}
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h4 class="text-xl font-semibold text-primary mb-3">Career Opportunities</h4>
+                            <div class="flex flex-wrap gap-2">
+                                ${course.careers.map(career => `
+                                    <span class="badge badge-primary">${career}</span>
+                                `).join('')}
+                            </div>
+                        </div>
+
+                        <div class="card bg-surface">
+                            <h4 class="text-xl font-semibold text-primary mb-3">Student Testimonial</h4>
+                            <div class="flex items-start gap-4">
+                                <svg class="w-8 h-8 text-primary flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <div>
+                                    <p class="text-text-secondary italic mb-3">"${course.testimonial.text}"</p>
+                                    <div class="font-semibold text-primary">${course.testimonial.name}</div>
+                                    <div class="text-sm text-text-secondary">${course.testimonial.role}</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4">
+                            <a href="admissions.html" class="btn btn-primary flex-1">Apply Now</a>
+                            <button onclick="document.getElementById('courseModal').classList.add('hidden')" class="btn btn-ghost flex-1">Close</button>
+                        </div>
+                    </div>
+                `;
+
+                courseModal.classList.remove('hidden');
+            });
+        });
+
+        closeModal.addEventListener('click', () => {
+            courseModal.classList.add('hidden');
+        });
+
+        courseModal.addEventListener('click', (e) => {
+            if (e.target === courseModal) {
+                courseModal.classList.add('hidden');
+            }
+        });
+
+        // AI Chatbot
+        const aiChatbot = document.getElementById('aiChatbot');
+        const floatingAiBtn = document.getElementById('floatingAiBtn');
+        const aiAssistantBtn = document.getElementById('aiAssistantBtn');
+        const closeChatbot = document.getElementById('closeChatbot');
+        const chatForm = document.getElementById('chatForm');
+        const chatInput = document.getElementById('chatInput');
+        const chatMessages = document.getElementById('chatMessages');
+
+        const aiKeywords = ['ai', 'artificial intelligence', 'machine learning', 'ml', 'deep learning', 'neural network', 'data science', 'algorithm', 'nlp', 'natural language processing', 'computer vision', 'robotics', 'automation'];
+
+        function openChatbot() {
+            aiChatbot.classList.remove('hidden');
+            floatingAiBtn.classList.add('hidden');
+        }
+
+        function closeChatbotFunc() {
+            aiChatbot.classList.add('hidden');
+            floatingAiBtn.classList.remove('hidden');
+        }
+
+        floatingAiBtn.addEventListener('click', openChatbot);
+        aiAssistantBtn.addEventListener('click', openChatbot);
+        closeChatbot.addEventListener('click', closeChatbotFunc);
+
+        function containsAIKeyword(text) {
+            const lowerText = text.toLowerCase();
+            return aiKeywords.some(keyword => lowerText.includes(keyword));
+        }
+
+        function addMessage(message, isUser = false) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `flex gap-3 ${isUser ? 'justify-end' : ''}`;
+
+            if (!isUser) {
+                messageDiv.innerHTML = `
+                    <div class="w-8 h-8 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0">
+                        <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                        </svg>
+                    </div>
+                    <div class="bg-white rounded-lg p-3 shadow-sm max-w-[80%]">
+                        <p class="text-sm text-text-primary">${message}</p>
+                    </div>
+                `;
+            } else {
+                messageDiv.innerHTML = `
+                    <div class="bg-primary text-white rounded-lg p-3 shadow-sm max-w-[80%]">
+                        <p class="text-sm">${message}</p>
+                    </div>
+                `;
+            }
+
+            chatMessages.appendChild(messageDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        function getAIResponse(userMessage) {
+            if (!containsAIKeyword(userMessage)) {
+                return "I'm specifically designed to help with Artificial Intelligence topics. Please ask me questions related to AI, machine learning, data science, or related technologies.";
+            }
+
+            const lowerMessage = userMessage.toLowerCase();
+
+            if (lowerMessage.includes('machine learning') || lowerMessage.includes('ml')) {
+                return "Machine Learning is a subset of AI that enables systems to learn and improve from experience without being explicitly programmed. At MMCAS, our AI & Data Science program covers supervised learning, unsupervised learning, and reinforcement learning techniques.";
+            } else if (lowerMessage.includes('deep learning') || lowerMessage.includes('neural network')) {
+                return "Deep Learning uses artificial neural networks with multiple layers to progressively extract higher-level features from raw input. Our curriculum includes hands-on projects with TensorFlow and PyTorch frameworks.";
+            } else if (lowerMessage.includes('data science')) {
+                return "Data Science combines statistics, programming, and domain expertise to extract insights from data. Our program teaches Python, R, SQL, and big data technologies like Hadoop and Spark.";
+            } else if (lowerMessage.includes('nlp') || lowerMessage.includes('natural language processing')) {
+                return "Natural Language Processing enables computers to understand, interpret, and generate human language. We cover text processing, sentiment analysis, chatbots, and language models like GPT.";
+            } else if (lowerMessage.includes('computer vision')) {
+                return "Computer Vision enables machines to interpret and understand visual information from the world. Our courses cover image processing, object detection, facial recognition, and CNN architectures.";
+            } else if (lowerMessage.includes('course') || lowerMessage.includes('program')) {
+                return "Our AI & Data Science program is a 3-year undergraduate course covering Python programming, statistics, machine learning algorithms, deep learning, NLP, computer vision, and big data technologies. Would you like to know more about admissions?";
+            } else if (lowerMessage.includes('career') || lowerMessage.includes('job')) {
+                return "AI professionals are in high demand! Career opportunities include AI Engineer, Data Scientist, Machine Learning Engineer, NLP Specialist, Computer Vision Engineer, and AI Research Scientist. Our placement rate is 98.5%!";
+            } else {
+                return "That's an interesting AI question! Our AI & Data Science program at MMCAS covers comprehensive topics in artificial intelligence. Would you like to know about specific areas like machine learning, deep learning, NLP, or computer vision?";
+            }
+        }
+
+        chatForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const userMessage = chatInput.value.trim();
+
+            if (userMessage) {
+                addMessage(userMessage, true);
+                chatInput.value = '';
+
+                setTimeout(() => {
+                    const response = getAIResponse(userMessage);
+                    addMessage(response);
+                }, 500);
+            }
+        });
+
+        // Sticky Header
+        let lastScroll = 0;
+        const header = document.getElementById('mainHeader');
+
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+
+            if (currentScroll > 100) {
+                header.classList.add('shadow-custom-md');
+            } else {
+                header.classList.remove('shadow-custom-md');
+            }
+
+            lastScroll = currentScroll;
+        });
+    </script>
+
+    <style>
+     .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-clamp: 3;  /* Standard property */
+    display: -webkit-box; /* Keep this for older browsers */
+}
+        .btn-sm {
+            padding: 0.5rem 1rem;
+            font-size: 0.875rem;
+        }
+
+        #chatMessages::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        #chatMessages::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+
+        #chatMessages::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
+        }
+
+        #chatMessages::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+    </style>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

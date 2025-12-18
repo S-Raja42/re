@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="MMCAS Digital Gallery - Explore our vibrant campus life through photos and videos of academic events, cultural programs, sports activities, and student achievements">
+    <meta name="keywords"
+        content="MMCAS gallery, campus life, college events, student activities, cultural programs, sports, achievements">
+    <title>Gallery - MMCAS Digital Campus</title>
+    <link rel="stylesheet" href="../css/main.css">
+
+    <script type="module" async
+        src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fmmcasdigi4958back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.12"></script>
+    <script type="module" defer src="https://static.rocket.new/rocket-shot.js?v=0.0.1"></script>
+</head>
+
+<body class="bg-background">
+    <!-- Navigation Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white shadow-custom-sm transition-all duration-300"
+        id="mainHeader">
+        <nav class="container-custom">
+            <div class="flex items-center justify-between py-4">
+                <!-- Logo -->
+                 <a href="homepage.html" class="flex items-center gap-3 group">
+                    
+                        <img class="impor" src="/image/logo.jpg" alt="" >
+                    <div class="hidden md:block">
+                        <div class="font-headline font-bold text-xl text-primary">Muthayammal Memorial College of <br>Arts and Science</div>
+                        <div class="text-xs text-text-secondary">Muthayammal Educational Trust</div>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden lg:flex items-center gap-8">
+                    <a href="homepage.html"
+                        class="text-text-secondary hover:text-primary transition-colors duration-200">Home</a>
+                    <a href="about_us.html"
+                        class="text-text-secondary hover:text-primary transition-colors duration-200">About Us</a>
+                    <a href="courses.html"
+                        class="text-text-secondary hover:text-primary transition-colors duration-200">Courses</a>
+                    <a href="admissions.html"
+                        class="text-text-secondary hover:text-primary transition-colors duration-200">Admissions</a>
+                    <a href="facilities.html"
+                        class="text-text-secondary hover:text-primary transition-colors duration-200">Facilities</a>
+                    <a href="gallery.html"
+                        class="text-primary font-semibold border-b-2 border-primary pb-1 transition-colors duration-200">Gallery</a>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="hidden md:flex items-center gap-4">
+                    <a href="admissions.html" class="btn btn-primary">Apply Now</a>
+                    <button id="aiAssistantBtn" class="btn btn-ghost" aria-label="Open AI Assistant">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="lg:hidden p-2 text-primary" aria-label="Toggle mobile menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="hidden lg:hidden pb-4">
+                <div class="flex flex-col gap-4">
+                    <a href="homepage.html"
+                        class="text-text-secondary hover:text-primary py-2 pl-4 transition-colors duration-200">Home</a>
+                    <a href="about_us.html"
+                        class="text-text-secondary hover:text-primary py-2 pl-4 transition-colors duration-200">About
+                        Us</a>
+                    <a href="courses.html"
+                        class="text-text-secondary hover:text-primary py-2 pl-4 transition-colors duration-200">Courses</a>
+                    <a href="admissions.html"
+                        class="text-text-secondary hover:text-primary py-2 pl-4 transition-colors duration-200">Admissions</a>
+                    <a href="facilities.html"
+                        class="text-text-secondary hover:text-primary py-2 pl-4 transition-colors duration-200">Facilities</a>
+                    <a href="gallery.html"
+                        class="text-primary font-semibold py-2 border-l-4 border-primary pl-4">Gallery</a>
+                    <a href="admissions.html" class="btn btn-primary w-full mt-2">Apply Now</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-16 bg-gradient-to-br from-primary-50 via-white to-secondary-50">
+        <div class="container-custom">
+            <div class="text-center max-w-4xl mx-auto animate-slideUp">
+                <h1 class="text-primary mb-6">Campus Life Gallery</h1>
+                <p class="text-text-secondary text-xl leading-relaxed mb-8">Experience the vibrant spirit of MMCAS
+                    through our visual journey of academic excellence, cultural celebrations, sports achievements, and
+                    memorable moments that define our community</p>
+
+                <!-- Search and Filter Bar -->
+                <div class="flex flex-col md:flex-row gap-4 items-center justify-center">
+                    <div class="relative w-full md:w-96">
+                        <input type="text" id="searchInput" placeholder="Search photos and videos..."
+                            class="form-input pl-12 pr-4" aria-label="Search gallery">
+                        <svg class="w-5 h-5 text-text-secondary absolute left-4 top-1/2 -translate-y-1/2" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </div>
+                    <button id="filterBtn" class="btn btn-outline flex items-center gap-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z" />
+                        </svg>
+                        Filter
+                    </button>
+                    <button id="resetBtn" class="btn btn-ghost flex items-center gap-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                        </svg>
+                        Reset
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Filter Tabs -->
+    <section class="section-alt py-8 sticky top-20 z-40 bg-surface/95 backdrop-blur-sm border-b border-neutral-200">
+        <div class="container-custom">
+            <div class="flex flex-wrap gap-3 justify-center">
+                <button class="category-tab active" data-category="all">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                    </svg>
+                    All Gallery
+                </button>
+                <button class="category-tab" data-category="academic">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                    </svg>
+                    Academic Events
+                </button>
+                <button class="category-tab" data-category="cultural">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
+                    </svg>
+                    Cultural Programs
+                </button>
+                <button class="category-tab" data-category="sports">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    Sports Activities
+                </button>
+                <button class="category-tab" data-category="campus">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                    </svg>
+                    Campus Life
+                </button>
+                <button class="category-tab" data-category="achievements">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                    </svg>
+                    Achievements
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="section">
+        <div class="container-custom">
+            <!-- Stats Bar -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+                <div class="card text-center">
+                    <div class="text-3xl font-bold text-primary mb-2" id="photoCount">248</div>
+                    <div class="text-sm text-text-secondary">Photos</div>
+                </div>
+                <div class="card text-center">
+                    <div class="text-3xl font-bold text-secondary mb-2" id="videoCount">42</div>
+                    <div class="text-sm text-text-secondary">Videos</div>
+                </div>
+                <div class="card text-center">
+                    <div class="text-3xl font-bold text-accent mb-2" id="eventCount">156</div>
+                    <div class="text-sm text-text-secondary">Events</div>
+                </div>
+                <div class="card text-center">
+                    <div class="text-3xl font-bold text-primary mb-2">2025</div>
+                    <div class="text-sm text-text-secondary">Latest Year</div>
+                </div>
+            </div>
+
+            <!-- Gallery Items -->
+            <div id="galleryGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <!-- Gallery items will be dynamically inserted here -->
+            </div>
+
+            <!-- Load More Button -->
+            <div class="text-center mt-12">
+                <button id="loadMoreBtn" class="btn btn-primary">
+                    Load More
+                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Contest Section -->
+    <section class="section section-alt">
+        <div class="container-custom">
+            <div class="max-w-4xl mx-auto">
+                <div class="card-elevated text-center">
+                    <div class="w-20 h-20 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                    </div>
+                    <h2 class="text-primary mb-4">Campus Photo Contest 2025</h2>
+                    <p class="text-text-secondary text-lg mb-8">Share your best campus moments and win exciting prizes!
+                        Submit your photos showcasing MMCAS life, culture, and spirit.</p>
+                    <div class="flex flex-wrap gap-4 justify-center">
+                        <button id="submitPhotoBtn" class="btn btn-accent">Submit Your Photo</button>
+                        <a href="javascript:void(0)" class="btn btn-outline">Contest Rules</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Integration -->
+    <section class="section">
+        <div class="container-custom">
+            <div class="text-center mb-12">
+                <h2 class="text-primary mb-4">Follow Us on Social Media</h2>
+                <p class="text-text-secondary text-xl max-w-3xl mx-auto">Stay connected with daily updates,
+                    behind-the-scenes moments, and student stories</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Instagram -->
+                <a href="javascript:void(0)" class="card group hover:shadow-custom-lg transition-all duration-300">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div
+                            class="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="font-semibold text-primary">Instagram</div>
+                            <div class="text-sm text-text-secondary">@mmcas_official</div>
+                        </div>
+                    </div>
+                    <div class="text-2xl font-bold text-primary mb-1">12.5K</div>
+                    <div class="text-sm text-text-secondary">Followers</div>
+                </a>
+
+                <!-- Facebook -->
+                <a href="javascript:void(0)" class="card group hover:shadow-custom-lg transition-all duration-300">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="font-semibold text-primary">Facebook</div>
+                            <div class="text-sm text-text-secondary">MMCAS Official</div>
+                        </div>
+                    </div>
+                    <div class="text-2xl font-bold text-primary mb-1">18.2K</div>
+                    <div class="text-sm text-text-secondary">Likes</div>
+                </a>
+
+                <!-- YouTube -->
+                <a href="javascript:void(0)" class="card group hover:shadow-custom-lg transition-all duration-300">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="font-semibold text-primary">YouTube</div>
+                            <div class="text-sm text-text-secondary">MMCAS Channel</div>
+                        </div>
+                    </div>
+                    <div class="text-2xl font-bold text-primary mb-1">8.7K</div>
+                    <div class="text-sm text-text-secondary">Subscribers</div>
+                </a>
+
+                <!-- Twitter -->
+                <a href="javascript:void(0)" class="card group hover:shadow-custom-lg transition-all duration-300">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-12 h-12 bg-sky-500 rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="font-semibold text-primary">Twitter</div>
+                            <div class="text-sm text-text-secondary">@MMCAS_College</div>
+                        </div>
+                    </div>
+                    <div class="text-2xl font-bold text-primary mb-1">6.3K</div>
+                    <div class="text-sm text-text-secondary">Followers</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary-950 text-white py-12">
+        <div class="container-custom">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <!-- About -->
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">About MMCAS</h4>
+                    <p class="text-white/80 text-sm leading-relaxed">Muthayammal Memorial College of Arts and Science -
+                        Empowering students with excellence in education for over 30 years.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="about_us.html"
+                                class="text-white/80 hover:text-white transition-colors duration-200">About Us</a></li>
+                        <li><a href="courses.html"
+                                class="text-white/80 hover:text-white transition-colors duration-200">Courses</a></li>
+                        <li><a href="admissions.html"
+                                class="text-white/80 hover:text-white transition-colors duration-200">Admissions</a>
+                        </li>
+                        <li><a href="facilities.html"
+                                class="text-white/80 hover:text-white transition-colors duration-200">Facilities</a>
+                        </li>
+                        <li><a href="gallery.html"
+                                class="text-white/80 hover:text-white transition-colors duration-200">Gallery</a></li>
+                    </ul>
+                </div>
+
+                <!-- Programs -->
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Popular Programs</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="courses.html"
+                                class="text-white/80 hover:text-white transition-colors duration-200">AI & Data
+                                Science</a></li>
+                        <li><a href="courses.html"
+                                class="text-white/80 hover:text-white transition-colors duration-200">Computer
+                                Science</a></li>
+                        <li><a href="courses.html"
+                                class="text-white/80 hover:text-white transition-colors duration-200">Business
+                                Administration</a></li>
+                        <li><a href="courses.html"
+                                class="text-white/80 hover:text-white transition-colors duration-200">Commerce</a></li>
+                        <li><a href="courses.html"
+                                class="text-white/80 hover:text-white transition-colors duration-200">Arts &
+                                Humanities</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Contact Info</h4>
+                    <ul class="space-y-2 text-sm text-white/80">
+                        <li>Rasipuram - Attur Road</li>
+                        <li>Namakkal District</li>
+                        <li>Tamil Nadu 637408</li>
+                        <li class="pt-2"><a href="tel:+914298272727"
+                                class="hover:text-white transition-colors duration-200">+91 4298 272727</a></li>
+                        <li><a href="mailto:admissions@mmcas.edu.in"
+                                class="hover:text-white transition-colors duration-200">admissions@mmcas.edu.in</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-white/20 pt-8 text-center text-sm text-white/60">
+                <p>© 2025 Muthayammal Memorial College of Arts and Science. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightboxModal" class="fixed inset-0 z-50 hidden bg-black/95 backdrop-blur-sm">
+        <div class="h-full flex flex-col">
+            <!-- Lightbox Header -->
+            <div class="flex items-center justify-between p-4 bg-black/50">
+                <div class="flex items-center gap-4">
+                    <button id="lightboxShare" class="text-white hover:text-primary-300 transition-colors duration-200"
+                        aria-label="Share">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
+                        </svg>
+                    </button>
+                    <button id="lightboxDownload"
+                        class="text-white hover:text-primary-300 transition-colors duration-200" aria-label="Download">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                        </svg>
+                    </button>
+                </div>
+                <button id="closeLightbox" class="text-white hover:text-primary-300 transition-colors duration-200"
+                    aria-label="Close lightbox">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Lightbox Content -->
+            <div class="flex-1 flex items-center justify-center p-4 relative">
+                <button id="lightboxPrev"
+                    class="absolute left-4 text-white hover:text-primary-300 transition-colors duration-200 z-10"
+                    aria-label="Previous image">
+                    <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                    </svg>
+                </button>
+
+                <div id="lightboxContent" class="max-w-6xl max-h-full">
+                    <!-- Content will be inserted here -->
+                </div>
+
+                <button id="lightboxNext"
+                    class="absolute right-4 text-white hover:text-primary-300 transition-colors duration-200 z-10"
+                    aria-label="Next image">
+                    <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Lightbox Footer -->
+            <div id="lightboxInfo" class="p-4 bg-black/50 text-white text-center">
+                <!-- Info will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Photo Submission Modal -->
+    <div id="submissionModal"
+        class="fixed inset-0 z-50 hidden bg-black/50 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl shadow-custom-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+            <div class="p-6">
+                <div class="flex items-center justify-between mb-6">
+                    <h3 class="text-2xl font-semibold text-primary">Submit Your Photo</h3>
+                    <button id="closeSubmissionModal"
+                        class="text-text-secondary hover:text-primary transition-colors duration-200"
+                        aria-label="Close modal">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+
+                <form id="photoSubmissionForm" class="space-y-6">
+                    <div>
+                        <label for="studentName" class="form-label">Your Name</label>
+                        <input type="text" id="studentName" name="studentName" class="form-input"
+                            placeholder="Enter your full name" required>
+                    </div>
+
+                    <div>
+                        <label for="studentEmail" class="form-label">Email Address</label>
+                        <input type="email" id="studentEmail" name="studentEmail" class="form-input"
+                            placeholder="your.email@example.com" required>
+                    </div>
+
+                    <div>
+                        <label for="photoCategory" class="form-label">Photo Category</label>
+                        <select id="photoCategory" name="photoCategory" class="form-input" required>
+                            <option value="">Select a category</option>
+                            <option value="academic">Academic Events</option>
+                            <option value="cultural">Cultural Programs</option>
+                            <option value="sports">Sports Activities</option>
+                            <option value="campus">Campus Life</option>
+                            <option value="achievements">Achievements</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="photoTitle" class="form-label">Photo Title</label>
+                        <input type="text" id="photoTitle" name="photoTitle" class="form-input"
+                            placeholder="Give your photo a catchy title" required>
+                    </div>
+
+                    <div>
+                        <label for="photoDescription" class="form-label">Description</label>
+                        <textarea id="photoDescription" name="photoDescription" rows="4" class="form-input"
+                            placeholder="Tell us the story behind this photo..." required></textarea>
+                    </div>
+
+                    <div>
+                        <label class="form-label">Upload Photo</label>
+                        <div
+                            class="border-2 border-dashed border-neutral-300 rounded-lg p-8 text-center hover:border-primary transition-colors duration-200 cursor-pointer">
+                            <input type="file" id="photoFile" name="photoFile" accept="image/*" class="hidden" required>
+                            <label for="photoFile" class="cursor-pointer">
+                                <svg class="w-12 h-12 text-text-secondary mx-auto mb-4" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+                                </svg>
+                                <div class="text-text-secondary">
+                                    <span class="text-primary font-semibold">Click to upload</span> or drag and drop
+                                </div>
+                                <div class="text-sm text-text-secondary mt-2">PNG, JPG up to 10MB</div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-3">
+                        <input type="checkbox" id="termsAgree" name="termsAgree" class="mt-1" required>
+                        <label for="termsAgree" class="text-sm text-text-secondary">
+                            I agree that my photo may be used by MMCAS for promotional purposes and I have the rights to
+                            submit this photo.
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-full">Submit Photo</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- AI Assistant Chatbot -->
+    <div id="aiChatbot" class="fixed bottom-6 right-6 z-50 hidden">
+        <div class="bg-white rounded-2xl shadow-custom-lg w-96 max-w-[calc(100vw-3rem)] overflow-hidden">
+            <!-- Chatbot Header -->
+            <div class="bg-gradient-to-r from-primary to-primary-700 text-white p-4 flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="font-semibold">AI Learning Assistant</div>
+                        <div class="text-xs text-white/80">Ask me about AI topics</div>
+                    </div>
+                </div>
+                <button id="closeChatbot" class="hover:bg-white/20 p-2 rounded-lg transition-colors duration-200"
+                    aria-label="Close chatbot">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Chat Messages -->
+            <div id="chatMessages" class="h-96 overflow-y-auto p-4 space-y-4 bg-surface">
+                <div class="flex gap-3">
+                    <div class="w-8 h-8 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0">
+                        <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                        </svg>
+                    </div>
+                    <div class="bg-white rounded-lg p-3 shadow-sm max-w-[80%]">
+                        <p class="text-sm text-text-primary">Hello! I'm your AI Learning Assistant. I can help you with
+                            questions about Artificial Intelligence topics. What would you like to know?</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chat Input -->
+            <div class="p-4 border-t border-neutral-200">
+                <form id="chatForm" class="flex gap-2">
+                    <input type="text" id="chatInput" placeholder="Ask about AI topics..."
+                        class="flex-1 px-4 py-2 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-sm"
+                        required>
+                    <button type="submit" class="btn btn-primary px-4 py-2" aria-label="Send message">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating AI Button -->
+    <button id="floatingAiBtn"
+        class="fixed bottom-6 right-6 z-40 w-14 h-14 bg-primary text-white rounded-full shadow-custom-lg hover:bg-primary-700 hover:scale-110 transition-all duration-200 flex items-center justify-center"
+        aria-label="Open AI Assistant">
+        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+        </svg>
+    </button>
+
+    <script>
+        // Gallery Data
+        const galleryData = [
+            // Academic Events
+            { id: 1, type: 'image', category: 'academic', title: 'Annual Science Exhibition 2025', description: 'Students showcasing innovative projects', date: 'March 15, 2025', image: 'https://images.unsplash.com/photo-1532094349884-543bc11b234d?q=80&w=2940&auto=format&fit=crop', alt: 'Students presenting science projects at exhibition with display boards and models' },
+            { id: 2, type: 'image', category: 'academic', title: 'Guest Lecture Series', description: 'Industry expert sharing insights', date: 'March 10, 2025', image: 'https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', alt: 'Professional speaker delivering lecture to attentive students in auditorium' },
+            { id: 3, type: 'image', category: 'academic', title: 'Research Symposium', description: 'Faculty and students presenting research papers', date: 'February 28, 2025', image: 'https://pixabay.com/get/g7f3e0e3f8e0c8c8f8e0c8c8f8e0c8c8f8e0c8c8f8e0c8c8f8e0c8c8f8e0c8c8f_1920.jpg', alt: 'Academic conference with researchers presenting findings on projection screen' },
+            { id: 4, type: 'video', category: 'academic', title: 'Convocation Ceremony 2024', description: 'Graduation celebration highlights', date: 'December 20, 2024', thumbnail: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=2940&auto=format&fit=crop', alt: 'Graduates in caps and gowns celebrating at convocation ceremony' },
+
+            // Cultural Programs
+            { id: 5, type: 'image', category: 'cultural', title: 'Annual Day Celebrations', description: 'Cultural performances by students', date: 'January 26, 2025', image: 'https://images.pexels.com/photos/1157557/pexels-photo-1157557.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', alt: 'Students performing traditional dance on stage with colorful costumes' },
+            { id: 6, type: 'image', category: 'cultural', title: 'Music Festival', description: 'Inter-college music competition', date: 'February 14, 2025', image: 'https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?q=80&w=2940&auto=format&fit=crop', alt: 'Student band performing live music with guitars and drums on stage' },
+            { id: 7, type: 'video', category: 'cultural', title: 'Drama Competition', description: 'Award-winning theatrical performance', date: 'March 5, 2025', thumbnail: 'https://images.pexels.com/photos/713149/pexels-photo-713149.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', alt: 'Students performing dramatic scene in theatrical production' },
+            { id: 8, type: 'image', category: 'cultural', title: 'Traditional Day', description: 'Students celebrating cultural heritage', date: 'January 15, 2025', image: 'https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?q=80&w=2940&auto=format&fit=crop', alt: 'Students in traditional ethnic attire celebrating cultural diversity' },
+
+            // Sports Activities
+            { id: 9, type: 'image', category: 'sports', title: 'Inter-College Cricket Tournament', description: 'MMCAS team winning championship', date: 'February 20, 2025', image: 'https://images.pexels.com/photos/1661950/pexels-photo-1661950.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', alt: 'Cricket team celebrating victory with trophy on field' },
+            { id: 10, type: 'image', category: 'sports', title: 'Annual Sports Day', description: 'Track and field events', date: 'March 1, 2025', image: 'https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=2940&auto=format&fit=crop', alt: 'Athletes competing in track race on sports day' },
+            { id: 11, type: 'video', category: 'sports', title: 'Basketball Championship', description: 'Final match highlights', date: 'February 25, 2025', thumbnail: 'https://images.pexels.com/photos/1752757/pexels-photo-1752757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', alt: 'Basketball players in action during championship match' },
+            { id: 12, type: 'image', category: 'sports', title: 'Yoga Day Celebration', description: 'Mass yoga session', date: 'June 21, 2024', image: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=2940&auto=format&fit=crop', alt: 'Large group of students practicing yoga poses outdoors' },
+
+            // Campus Life
+            { id: 13, type: 'image', category: 'campus', title: 'Library Study Sessions', description: 'Students engaged in group study', date: 'March 12, 2025', image: 'https://images.pexels.com/photos/1438072/pexels-photo-1438072.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', alt: 'Students studying together in modern library with books and laptops' },
+            { id: 14, type: 'image', category: 'campus', title: 'Campus Cafeteria', description: 'Students enjoying lunch break', date: 'March 8, 2025', image: 'https://images.unsplash.com/photo-1567521464027-f127ff144326?q=80&w=2940&auto=format&fit=crop', alt: 'Students socializing and eating in bright campus cafeteria' },
+            { id: 15, type: 'image', category: 'campus', title: 'Computer Lab Session', description: 'Practical programming class', date: 'March 6, 2025', image: 'https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', alt: 'Students working on computers in modern computer lab' },
+            { id: 16, type: 'video', category: 'campus', title: 'Campus Tour', description: 'Virtual walkthrough of facilities', date: 'January 1, 2025', thumbnail: 'https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=2940&auto=format&fit=crop', alt: 'Aerial view of beautiful college campus with buildings and greenery' },
+
+            // Achievements
+            { id: 17, type: 'image', category: 'achievements', title: 'National Hackathon Winners', description: 'CS students winning first prize', date: 'March 18, 2025', image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', alt: 'Students holding trophy and certificate at hackathon award ceremony' },
+            { id: 18, type: 'image', category: 'achievements', title: 'Research Paper Publication', description: 'Faculty achievement recognition', date: 'February 15, 2025', image: 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=2940&auto=format&fit=crop', alt: 'Faculty member receiving award for research publication' },
+            { id: 19, type: 'image', category: 'achievements', title: 'Placement Success', description: 'Students placed in top companies', date: 'March 20, 2025', image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', alt: 'Group of students celebrating job placements with offer letters' },
+            { id: 20, type: 'image', category: 'achievements', title: 'NAAC A+ Accreditation', description: 'College receiving highest grade', date: 'January 10, 2025', image: 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=2940&auto=format&fit=crop', alt: 'College officials receiving NAAC accreditation certificate' },
+        ];
+
+        let currentCategory = 'all';
+        let currentLightboxIndex = 0;
+        let displayedItems = 12;
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Category Filter
+        const categoryTabs = document.querySelectorAll('.category-tab');
+        categoryTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                categoryTabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+                currentCategory = tab.dataset.category;
+                displayedItems = 12;
+                renderGallery();
+            });
+        });
+
+        // Search Functionality
+        const searchInput = document.getElementById('searchInput');
+        searchInput.addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase();
+            renderGallery(searchTerm);
+        });
+
+        // Reset Button
+        document.getElementById('resetBtn').addEventListener('click', () => {
+            currentCategory = 'all';
+            searchInput.value = '';
+            displayedItems = 12;
+            categoryTabs.forEach(t => t.classList.remove('active'));
+            categoryTabs[0].classList.add('active');
+            renderGallery();
+        });
+
+        // Render Gallery
+        function renderGallery(searchTerm = '') {
+            const galleryGrid = document.getElementById('galleryGrid');
+            let filteredData = galleryData;
+
+            if (currentCategory !== 'all') {
+                filteredData = filteredData.filter(item => item.category === currentCategory);
+            }
+
+            if (searchTerm) {
+                filteredData = filteredData.filter(item =>
+                    item.title.toLowerCase().includes(searchTerm) ||
+                    item.description.toLowerCase().includes(searchTerm)
+                );
+            }
+
+            const itemsToShow = filteredData.slice(0, displayedItems);
+
+            galleryGrid.innerHTML = itemsToShow.map((item, index) => `
+                <div class="gallery-item group cursor-pointer" data-index="${index}" data-id="${item.id}">
+                    <div class="relative overflow-hidden rounded-lg shadow-custom-sm hover:shadow-custom-md transition-all duration-300">
+                        <div class="aspect-w-4 aspect-h-3 bg-neutral-100">
+                            <img src="${item.type === 'video' ? item.thumbnail : item.image}" 
+                                 alt="${item.alt}"
+                                 class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                                 onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop'; this.onerror=null;">
+                        </div>
+                        ${item.type === 'video' ? `
+                            <div class="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-black/40 transition-colors duration-300">
+                                <div class="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center">
+                                    <svg class="w-8 h-8 text-primary ml-1" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M8 5v14l11-7z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        ` : ''}
+                        <div class="absolute top-3 right-3">
+                            <span class="badge badge-${getCategoryColor(item.category)}">${getCategoryName(item.category)}</span>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <h3 class="font-semibold text-primary mb-1 line-clamp-1">${item.title}</h3>
+                        <p class="text-sm text-text-secondary line-clamp-2 mb-2">${item.description}</p>
+                        <div class="flex items-center gap-2 text-xs text-text-secondary">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                            </svg>
+                            ${item.date}
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+
+            // Add click listeners
+            document.querySelectorAll('.gallery-item').forEach(item => {
+                item.addEventListener('click', () => {
+                    const index = parseInt(item.dataset.index);
+                    openLightbox(index, filteredData);
+                });
+            });
+
+            // Update load more button
+            const loadMoreBtn = document.getElementById('loadMoreBtn');
+            if (displayedItems >= filteredData.length) {
+                loadMoreBtn.classList.add('hidden');
+            } else {
+                loadMoreBtn.classList.remove('hidden');
+            }
+        }
+
+        // Load More
+        document.getElementById('loadMoreBtn').addEventListener('click', () => {
+            displayedItems += 12;
+            renderGallery();
+        });
+
+        // Helper Functions
+        function getCategoryColor(category) {
+            const colors = {
+                academic: 'primary',
+                cultural: 'secondary',
+                sports: 'accent',
+                campus: 'success',
+                achievements: 'warning'
+            };
+            return colors[category] || 'primary';
+        }
+
+        function getCategoryName(category) {
+            const names = {
+                academic: 'Academic',
+                cultural: 'Cultural',
+                sports: 'Sports',
+                campus: 'Campus',
+                achievements: 'Achievement'
+            };
+            return names[category] || category;
+        }
+
+        // Lightbox
+        function openLightbox(index, data) {
+            currentLightboxIndex = index;
+            const modal = document.getElementById('lightboxModal');
+            const content = document.getElementById('lightboxContent');
+            const info = document.getElementById('lightboxInfo');
+            const item = data[index];
+
+            if (item.type === 'video') {
+                content.innerHTML = `
+                    <video controls class="max-w-full max-h-[70vh] mx-auto rounded-lg">
+                        <source src="${item.image || item.thumbnail}" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                `;
+            } else {
+                content.innerHTML = `
+                    <img src="${item.image}" 
+                         alt="${item.alt}"
+                         class="max-w-full max-h-[70vh] mx-auto rounded-lg"
+                         onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop'; this.onerror=null;">
+                `;
+            }
+
+            info.innerHTML = `
+                <h3 class="text-xl font-semibold mb-2">${item.title}</h3>
+                <p class="text-white/80 mb-2">${item.description}</p>
+                <div class="flex items-center justify-center gap-4 text-sm text-white/60">
+                    <span>${item.date}</span>
+                    <span>•</span>
+                    <span>${getCategoryName(item.category)}</span>
+                </div>
+            `;
+
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+
+            // Navigation
+            document.getElementById('lightboxPrev').onclick = () => {
+                currentLightboxIndex = (currentLightboxIndex - 1 + data.length) % data.length;
+                openLightbox(currentLightboxIndex, data);
+            };
+
+            document.getElementById('lightboxNext').onclick = () => {
+                currentLightboxIndex = (currentLightboxIndex + 1) % data.length;
+                openLightbox(currentLightboxIndex, data);
+            };
+        }
+
+        document.getElementById('closeLightbox').addEventListener('click', () => {
+            document.getElementById('lightboxModal').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        });
+
+        // Lightbox Actions
+        document.getElementById('lightboxShare').addEventListener('click', () => {
+            alert('Share functionality would open social media sharing options');
+        });
+
+        document.getElementById('lightboxDownload').addEventListener('click', () => {
+            alert('Download functionality would download the image');
+        });
+
+        // Photo Submission Modal
+        document.getElementById('submitPhotoBtn').addEventListener('click', () => {
+            document.getElementById('submissionModal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        });
+
+        document.getElementById('closeSubmissionModal').addEventListener('click', () => {
+            document.getElementById('submissionModal').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        });
+
+        document.getElementById('photoSubmissionForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for your submission! Your photo will be reviewed by our team and added to the gallery soon.');
+            document.getElementById('submissionModal').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+            e.target.reset();
+        });
+
+        // AI Chatbot
+        const aiChatbot = document.getElementById('aiChatbot');
+        const floatingAiBtn = document.getElementById('floatingAiBtn');
+        const aiAssistantBtn = document.getElementById('aiAssistantBtn');
+        const closeChatbot = document.getElementById('closeChatbot');
+        const chatForm = document.getElementById('chatForm');
+        const chatInput = document.getElementById('chatInput');
+        const chatMessages = document.getElementById('chatMessages');
+
+        const aiKeywords = ['ai', 'artificial intelligence', 'machine learning', 'ml', 'deep learning', 'neural network', 'data science', 'algorithm', 'nlp', 'natural language processing', 'computer vision', 'robotics', 'automation'];
+
+        function openChatbotFunc() {
+            aiChatbot.classList.remove('hidden');
+            floatingAiBtn.classList.add('hidden');
+        }
+
+        function closeChatbotFunc() {
+            aiChatbot.classList.add('hidden');
+            floatingAiBtn.classList.remove('hidden');
+        }
+
+        floatingAiBtn.addEventListener('click', openChatbotFunc);
+        aiAssistantBtn.addEventListener('click', openChatbotFunc);
+        closeChatbot.addEventListener('click', closeChatbotFunc);
+
+        function containsAIKeyword(text) {
+            const lowerText = text.toLowerCase();
+            return aiKeywords.some(keyword => lowerText.includes(keyword));
+        }
+
+        function addMessage(message, isUser = false) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `flex gap-3 ${isUser ? 'justify-end' : ''}`;
+
+            if (!isUser) {
+                messageDiv.innerHTML = `
+                    <div class="w-8 h-8 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0">
+                        <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                        </svg>
+                    </div>
+                    <div class="bg-white rounded-lg p-3 shadow-sm max-w-[80%]">
+                        <p class="text-sm text-text-primary">${message}</p>
+                    </div>
+                `;
+            } else {
+                messageDiv.innerHTML = `
+                    <div class="bg-primary text-white rounded-lg p-3 shadow-sm max-w-[80%]">
+                        <p class="text-sm">${message}</p>
+                    </div>
+                `;
+            }
+
+            chatMessages.appendChild(messageDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        function getAIResponse(userMessage) {
+            if (!containsAIKeyword(userMessage)) {
+                return "I'm specifically designed to help with Artificial Intelligence topics. Please ask me questions related to AI, machine learning, data science, or related technologies.";
+            }
+
+            const lowerMessage = userMessage.toLowerCase();
+
+            if (lowerMessage.includes('machine learning') || lowerMessage.includes('ml')) {
+                return "Machine Learning is a subset of AI that enables systems to learn and improve from experience without being explicitly programmed. At MMCAS, our AI & Data Science program covers supervised learning, unsupervised learning, and reinforcement learning techniques.";
+            } else if (lowerMessage.includes('deep learning') || lowerMessage.includes('neural network')) {
+                return "Deep Learning uses artificial neural networks with multiple layers to progressively extract higher-level features from raw input. Our curriculum includes hands-on projects with TensorFlow and PyTorch frameworks.";
+            } else if (lowerMessage.includes('data science')) {
+                return "Data Science combines statistics, programming, and domain expertise to extract insights from data. Our program teaches Python, R, SQL, and big data technologies like Hadoop and Spark.";
+            } else if (lowerMessage.includes('nlp') || lowerMessage.includes('natural language processing')) {
+                return "Natural Language Processing enables computers to understand, interpret, and generate human language. We cover text processing, sentiment analysis, chatbots, and language models like GPT.";
+            } else if (lowerMessage.includes('computer vision')) {
+                return "Computer Vision enables machines to interpret and understand visual information from the world. Our courses cover image processing, object detection, facial recognition, and CNN architectures.";
+            } else {
+                return "That's an interesting AI question! Our AI & Data Science program at MMCAS covers comprehensive topics in artificial intelligence. Would you like to know about specific areas like machine learning, deep learning, NLP, or computer vision?";
+            }
+        }
+
+        chatForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const userMessage = chatInput.value.trim();
+
+            if (userMessage) {
+                addMessage(userMessage, true);
+                chatInput.value = '';
+
+                setTimeout(() => {
+                    const response = getAIResponse(userMessage);
+                    addMessage(response);
+                }, 500);
+            }
+        });
+
+        // Sticky Header
+        let lastScroll = 0;
+        const header = document.getElementById('mainHeader');
+
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+
+            if (currentScroll > 100) {
+                header.classList.add('shadow-custom-md');
+            } else {
+                header.classList.remove('shadow-custom-md');
+            }
+
+            lastScroll = currentScroll;
+        });
+
+        // Initialize Gallery
+        renderGallery();
+
+        // Keyboard Navigation for Lightbox
+        document.addEventListener('keydown', (e) => {
+            const modal = document.getElementById('lightboxModal');
+            if (!modal.classList.contains('hidden')) {
+                if (e.key === 'Escape') {
+                    modal.classList.add('hidden');
+                    document.body.style.overflow = 'auto';
+                } else if (e.key === 'ArrowLeft') {
+                    document.getElementById('lightboxPrev').click();
+                } else if (e.key === 'ArrowRight') {
+                    document.getElementById('lightboxNext').click();
+                }
+            }
+        });
+    </script>
+
+ <style>
+/* Category Tab */
+.category-tab {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid #d4d4d8; /* neutral-300 */
+  color: #6b7280;           /* text-secondary */
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.category-tab:hover {
+  border-color: #2563eb; /* primary */
+  color: #2563eb;
+}
+
+/* Active Tab */
+.category-tab.active {
+  background-color: #2563eb;
+  color: #ffffff;
+  border-color: #2563eb;
+}
+
+/* Line Clamp */
+.line-clamp-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: box;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+  -ms-box-orient: vertical;
+  box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  -ms-box-orient: vertical;
+  box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Chat Scrollbar */
+#chatMessages::-webkit-scrollbar {
+  width: 6px;
+}
+
+#chatMessages::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+#chatMessages::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+#chatMessages::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Mobile Responsive */
+@media (max-width: 640px) {
+  .category-tab {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}
+</style>
+
+    <script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+
+</html>
